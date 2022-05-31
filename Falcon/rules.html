@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Tenant Rule Report</title>
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">$(document).ready(function () { $('ul').hide(); });</script>
+</head>
+<body>
+	<div class="container">
+		<div class="reportHeader">
+    		<div class="logo">
+    			<img src="images/report-logo.gif" alt="Expert Rule Report Logo" />
+    		</div>
+    		<div class="headerText">
+    			<h1>Tenant Rule Report</h1>
+    			<div class="reportDescription">The Rule Report provides detailed information about the rules that are executed within Falcon. Only rules which are in the Active state at the time the report was generated are contained in this report.
+    			</div>
+   			</div>
+		</div>
+		<div class="reportDetails">
+			<table>
+		    	<tr>
+		    		<th>Tenant: </th>
+		    		<td>FI_BASE_TENANT</td>
+		    	</tr>
+		    	<tr>
+		    		<th>Report Date:</th>
+		    		<td>Monday, January 24, 2022 11:23:22 AM IST</td>
+		    	</tr>
+			</table>
+		</div>
+		<div class="reportBody">
+		
+    			<div>
+        			<h2 onclick="javascript:$('#crossfeed').slideToggle('slow');">Crossfeed</h2>
+        			<ul id="crossfeed">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#frd13').slideToggle('slow');">Fraud Dispositions 13</h2>
+        			<ul id="frd13">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#bis21').slideToggle('slow');">BIS 21</h2>
+        			<ul id="bis21">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#ldgr21').slideToggle('slow');">Ledger 21</h2>
+        			<ul id="ldgr21">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#rbtran21').slideToggle('slow');">Retail Banking Transactions 21</h2>
+        			<ul id="rbtran21">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: RB_FINC_DUP</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>suppress the alerts if current transaction id is equal to previous transaction id</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if(RBTRAN21.externalTransactionId = ACCT_UDV_DUPID)<br> then<br>  {<br>    		return;<br>  }<br>else<br>  {<br>    		ACCT_UDV_DUPID = RBTRAN21.externalTransactionId;<br>  }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h4>Rule Name: RB_CUG</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>retCode is an integer;<br>if(RBTRAN21.debitAcctNumber = "10049758747")<br>then<br>{<br>			ACCT_UDV_COUNT += 1;<br>			ACCT_UDV_AMT += RBTRAN21.transactionAmount;<br>			ACCT_UDV_TIME = Date_Time_Convert(RBTRAN21.transactionDate,RBTRAN21.transactionTime);<br>  			ForceCase(ACCOUNT);<br>            retCode = SendUDV();<br>}</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h4>Rule Name: RB_CUG_SET3</h4>
+						
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>Alert to be generated if Account number is in CUG list and cumualtive amount >= 5, velocity >= 2 within 5 minutes ACCOUNT level.</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>retCode is an integer;<br>if(LookupList("IVR_CUG_LIST",RBTRAN21.debitAcctNumber ) = 1<br>   and RBTRAN21.userCode1 = ("UPI" or "OPT" or "RIB")<br>   and RBTRAN21.depositWithdrawalFlag = "Q")<br>then<br>{<br>		if(ACCT_UDV_RCAMT >= 5 and ACCT_UDV_RCN >= 2)<br>		then<br>		{<br>			ForceCase(ACCOUNT);<br>            retCode = SendUDV();<br>        }<br>}</td>
+                				</tr>
+            				</table>
+						</li>
+							<li><h3>Rule Set: Udv Calculation Ruleset1</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount21</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+						<li><h4>Rule Name: IncrementTransactionCount22</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+					</ul>
+				</div>
+				<div>	
+        			<h2 onclick="javascript:$('#frd15').slideToggle('slow');">Fraud Dispositions 15</h2>
+        			<ul id="frd15">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+				
+    			<div>
+        			<h2 onclick="javascript:$('#nmon20').slideToggle('slow');">Nonmonetary 20</h2>
+        			<ul id="nmon20">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h4>Rule Name: DUP_TRXNID</h4>
+            				<table class="rule">
+					
+                				<tr>
+                					<th>Description:</th>
+                					<td>If current transaction ID  = previous one then supress case</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if(NMON20.externalTransactionId = CUST_UDV_TRXNID)<br>then<br> {<br>   			return;<br> }<br>else<br>  {<br>    		CUST_UDV_TRXNID = NMON20.externalTransactionId;<br>  }</td>
+                				</tr>
+            				</table>
+            		<ul>
+				</div>
+				<div>
+        			<h2 onclick="javascript:$('#ais20').slideToggle('slow');">Account Information Summary 20</h2>
+        			<ul id="ais20">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h4>Rule Name: TEST_DORMANT</h4>
+            				<table class="rule">
+
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Test</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if(ACCT_UDV_Status = "03")<br>then<br>{<br>  		ACCT_UDV_DOR = 1;<br>}</td>
+                				</tr>
+            				</table>
+            	</div>
+					
+					<div>
+        			<h2 onclick="javascript:$('#cis20').slideToggle('slow');">CIS 20</h2>
+        			<ul id="cis20">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+											
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            		</div>	
+					<div>
+        			<h2 onclick="javascript:$('#ext10').slideToggle('slow');">External Message 10</h2>
+        			<ul id="ext10">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+					</div>
+    			
+    			<div>
+        			<h2 onclick="javascript:$('#credit25_authpost').slideToggle('slow');">Credit 25 Authorization-Posting</h2>
+        			<ul id="credit25_authpost">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: VIP_INDICATOR</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>Add VIP tag if account number is inLIST</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if( LookupList("VIP_ACCOUNTS_CC", CRTRAN25.customerAcctNumber) = 1)     <br>then<br>{<br>	CRTRAN25.userData02 = "VIP";<br>}</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h4>Rule Name: CC_ECOMV_VEL5_IVR_BLK_RULE104</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>IVR Block and Call. ECOM Transactions.<br>Secured and Unsecured both.<br>Approved transactions only.<br>Count of transactions >= 5 and within 20 mins.</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>currDTTM is a real;<br>currDTTM = Date_Time_Convert(CRTRAN25.transactionDate,CRTRAN25.transactionTime);<br><br>if(CRTRAN25.posEntryMode = "E" and CRTRAN25.authDecisionCode = "A")<br>then<br>{	<br>	if(currDTTM - SRVC_UDV_RULE104_DTTM <= 0.34/24)<br>    then<br>    {	<br>          	SRVC_UDV_RULE104_COUNT += 1;<br>      		if(SRVC_UDV_RULE104_COUNT >= 5)<br>            then<br>              {<br>                	CRTRAN25.userData04 = "IVR_BLOCK_CR";<br>                	TriggerCase(SERVICE);<br>                	SendAuthAdvice(DECLINE);<br>                	CreateQueueAttributeString("IVR_BLOCK_CARD","IVR_BLOCK_CR");<br>                	CreateNotice("CC_ECOMV_VEL5_IVR_BLK_RULE104",CRTRAN25.transactionDate,45, "SeverityHigh", "EventCode4","SERVICE",0,"call and confirm,if genuine then remove block");<br>              }<br>    }<br>  	else<br>     {<br>        	SRVC_UDV_RULE104_COUNT = 1;<br>       		SRVC_UDV_RULE104_DTTM = currDTTM;       <br>     }<br>}</td>
+                				</tr>
+            				</table>
+            	</div>	
+			<div>				
+        			<h2 onclick="javascript:$('#debit25_authpost').slideToggle('slow');">Debit 25 Authorization-Posting</h2>
+        			<ul id="debit25_authpost">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: VIP_ALERT_EXCLUDEDB</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>Alert not to be generated for account numbers in list</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if(LookupList("VIP_ACCOUNTS",DBTRAN25.customerAcctNumber) = 1) <br>then<br>  {<br>    return;<br>  }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h4>Rule Name: DC_ATM_NONCHIP_DOMESTIC_DECLINE</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>Decline all Domestic Remote Onus Non Chip ATM/MATM transactions</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if(DBTRAN25.posEntryMode <> "V"  // nonchip<br>  and DBTRAN25.mcc = ("6011" or "6012")<br>  and DBTRAN25.transactionType = ("C" or "I" or "X" or "O")  // C- Cash, I- Balance Enquiry, X-Reversal, O- Mini statement<br>   and DBTRAN25.acquirerCountry = "356" <br>  and  DBTRAN25.atmOwner <> "B"  // B- Bank , C- Customer (Onus/Offus Indicator)<br>)<br>then<br>{<br>  	SendAuthAdvice(DECLINE);			<br>}</td>
+                				</tr>
+            				</table>
+            			</li>
+						</ul>
+        			</div>	
+    			<div>
+        			<h2 onclick="javascript:$('#pis12').slideToggle('slow');">PAN Information Summary 12</h2>
+        			<ul id="pis12">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            		</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#DBDECLINE').slideToggle('slow');">DBDECLINE</h2>
+        			<ul id="DBDECLINE">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#BBDECLINE').slideToggle('slow');">BBDECLINE</h2>
+        			<ul id="BBDECLINE">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#UPIDECLINE').slideToggle('slow');">UPIDECLINE</h2>
+        			<ul id="UPIDECLINE">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#CAMFAILURE').slideToggle('slow');">CAMFAILURE</h2>
+        			<ul id="CAMFAILURE">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#CAMUSERERR').slideToggle('slow');">CAMUSERERR</h2>
+        			<ul id="CAMUSERERR">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+    			<div>
+        			<h2 onclick="javascript:$('#CAMSUCCESS').slideToggle('slow');">CAMSUCCESS</h2>
+        			<ul id="CAMSUCCESS">
+        				<li><h3>Rule Set: Decision Ruleset</h3></li>
+					        				<li><h4>Rule Name: HighScoreCase</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>if ( ffmFrdCard.Score <br> is larger than 550 <br> ) then { ForceAccountCase()<br>;SendAuthAdvice( DECLINE )<br>; }</td>
+                				</tr>
+            				</table>
+            			</li>
+        				<li><h3>Rule Set: Udv Calculation Ruleset</h3></li>
+					        				<li><h4>Rule Name: IncrementTransactionCount</h4>
+            				<table class="rule">
+                				<tr>
+                					<th>Description:</th>
+                					<td>&nbsp;</td>
+                				</tr>
+                				<tr>
+                					<th>Mode:</th>
+                					<td>Production</td>
+                				</tr>
+                				<tr>
+                					<th>Tracking:</th>
+                					<td>Yes</td>
+                				</tr>
+                				<tr>
+                					<th>Content:</th>
+                					<td>ACCT_UDVtransactionCount += 1;</td>
+                				</tr>
+            				</table>
+            			</li>
+        			</ul>
+    			</div>
+			</div>
+		</div>
+		
+		<div class="reportFooter">
+		© 2001-2018 by Fair Isaac Corporation.   All rights reserved.
+		</div>
+	</div>
+</body>
+</html>

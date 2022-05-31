@@ -1,0 +1,177 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<!-- Mirrored from htmldemo.hasthemes.com/edumate/edumate/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Mar 2021 02:04:12 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>Edumate Education HTML Template</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static '/images/favicon.png' %}" type="image/png">
+
+
+    <!-- CSS
+    ============================================ -->
+
+    <!--===== Vendor CSS (Bootstrap & Icon Font) =====-->
+
+    <!-- <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/default.css"> -->
+
+
+    <!--===== Plugins CSS (All Plugins Files) =====-->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css"> -->
+
+    <!--====== Main Style CSS ======-->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+
+    <link rel="stylesheet" href="{% static '/css/vendor/plugins.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.min.css' %}">
+
+</head>
+
+<body>
+
+    <!--====== Header Start ======-->
+
+    <header class="header-area">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
+                    <div class="header-top-left mt-10">
+                        <ul class="header-meta">
+                            <li><a href="mailto://infoedumate@example.com">infoedumate@example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-top-right mt-10">
+                        <div class="header-link">
+                            <a class="notice" href="{% static 'notice.html' %}">Notice</a>
+                            <a class="login" href="{% static 'login.html' %}">Login</a>
+                            <a class="register" href="{% static 'register.html' %}">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="navigation" class="navigation navigation-landscape">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="header-logo">
+                            <a href="{% static 'index.html' %}"><img src="{% static '/images/logo.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 position-static">
+                        <div class="nav-toggle"></div>
+                        <nav class="nav-menus-wrapper">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a class="active" href="#">Home</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li><a class="active" href="{% static 'index.html' %}">Home 01</a></li>
+                                        <li><a href="{% static 'index-2.html' %}">Home 02</a></li>
+                                        <li><a href="{% static 'index-3.html' %}">Home 03</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Courses</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li>
+                                            <a href="#">Courses Grid</a>
+                                            <ul class="nav-dropdown nav-submenu">
+                                                <li><a href="{% static 'our-courses.html' %}">Courses 01</a></li>
+                                                <li><a href="{% static 'our-courses-2.html' %}">Courses 02</a></li>
+                                                <li><a href="{% static 'our-courses-3.html' %}">Courses 03</a></li>
+                                                <li><a href="{% static 'our-courses-left-sidebar.html' %}">Courses Left
+                                                        Sidebar</a></li>
+                                                <li><a href="{% static 'our-courses-right-sidebar.html' %}">Courses
+                                                        Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Courses</a>
+                                            <ul class="nav-dropdown nav-submenu">
+                                                <li><a href="{% static 'our-courses-list.html' %}">Courses List</a></li>
+                                                <li><a href="{% static 'our-courses-list-left-sidebar.html' %}">Courses
+                                                        List Left Sidebar </a></li>
+                                                <li><a href="{% static 'our-courses-list-right-sidebar.html' %}">Courses
+                                                        List Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="{% static 'courses-details.html' %}">Courses Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Events</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li><a href="{% static 'event.html' %}">Event 01</a></li>
+                                        <li><a href="{% static 'event-2.html' %}">Event 02</a></li>
+                                        <li><a href="{% static 'event-details.html'%}">Event Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li><a href="{% static 'about-us.html'%}">About</a></li>
+                                        <li><a href="{% static 'teachers.html' %}">Teachers</a></li>
+                                        <li><a href="{% static 'teacher-details.html' %}">Teachers Details</a></li>
+                                        <li><a href="{% static  'gallery.html' %}">Gallery</a></li>
+                                        <li><a href="{% static 'gallery-masonry.html' %}">Gallery Masonry</a></li>
+                                        <li><a href="{% static 'testimonial.html' %}">Testimonial</a></li>
+                                        <li><a href="{% static 'faq.html' %}">FAQ'S</a></li>
+                                        <li><a href="{% static 'notice.html' %}">Notice</a></li>
+                                        <li><a href="{% static 'login.html' %}">Login</a></li>
+                                        <li><a href="{% static 'register.html' %}">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li><a href="{% static 'shop.html' %}">Shop </a></li>
+                                        <li><a href="{% static 'shop-left-sidebar.html' %}">Shop Left Sidebar</a></li>
+                                        <li><a href="{% static 'shop-right-sidebar.html' %}">Shop Right Sidebar</a></li>
+                                        <li><a href="{% static 'product-details.html' %}">Shop Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li><a href="{% static 'blog.html' %}">Blog </a></li>
+                                        <li><a href="{% static 'blog-left-sidebar.html' %}">Blog Left Sidebar</a></li>
+                                        <li><a href="{% static 'blog-right-sideba.html' %}">Blog Right Sidebar</a></li>
+                                        <li><a href="{% static 'blog-details.html' %}">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% static 'contact.html' %}">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 position-static">
+                        <div class="header-search">
+                            <form action="#">
+                                <input type="text" placeholder="Search">
+                                <button><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
